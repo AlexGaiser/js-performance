@@ -17,3 +17,5 @@ Includes:
 1. generateRandomArr
 2. generateRandomObject
 3. checkPerformance
+4. readEveryIndex
+5. 
