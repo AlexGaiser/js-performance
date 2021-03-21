@@ -18,4 +18,7 @@ Includes:
 2. generateRandomObject
 3. checkPerformance
 4. readEveryIndex
-5. 
+5. randomStringFromArr
+6. randomStringFromConcat
+7. genRandomArrChar
+8. getRandomChar
