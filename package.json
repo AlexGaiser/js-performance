@@ -1,0 +1,25 @@
+{
+  "name": "js-performance",
+  "version": "0.0.1",
+  "description": "A repository for testing JavaScript Performance metrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexGaiser/js-performance.git"
+  },
+  "keywords": [
+    "Javascript",
+    "JS",
+    "Perfomance",
+    "benchmarking"
+  ],
+  "author": "Alex Gaiser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexGaiser/js-performance/issues"
+  },
+  "homepage": "https://github.com/AlexGaiser/js-performance#readme"
+}
