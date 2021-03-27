@@ -1,7 +1,8 @@
 const checkPerformance = (string, testFunc) => {
   console.time(string);
-  testFunc();
-  return console.timeEnd(string);
+  const res = testFunc();
+  console.timeEnd(string);
+  return res;
 };
 
 module.exports = {

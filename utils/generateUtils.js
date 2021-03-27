@@ -1,9 +1,9 @@
 const uuid = require("uuid").v4;
 
-const generateRandomArr = (length = 1000) => {
+const genRandomArrBase = (func) => (length = 1000) => {
   const arr = [];
   for (let i = 0; i < length; i++) {
-    const value = uuid();
+    const value = func();
     arr.push(value);
   }
   return arr;
@@ -23,6 +23,7 @@ const getRandomChar = () => {
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
   return characters.charAt(Math.floor(Math.random() * characters.length));
 };
+
 const randomStringFromArr = (length = 1000) => {
   const stringArr = [];
   for (let i = 0; i < length; i++) {
@@ -40,10 +41,23 @@ const randomStringFromConcat = (length = 1000) => {
   return str;
 };
 
+const genRandomStr = (length) => {
+  if (length > 100000) {
+    return randomStringFromArr(length);
+  } else {
+    return randomStringFromConcat(length);
+  }
+};
+
+const generateRandomArr = genRandomArrBase(uuid);
+const genRandomArrChar = genRandomArrBase(getRandomChar);
+
 module.exports = {
   generateRandomArr,
   generateRandomObject,
   randomStringFromArr,
   randomStringFromConcat,
+  genRandomArrChar,
   getRandomChar,
+  genRandomArrBase,
 };

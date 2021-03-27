@@ -1,6 +1,7 @@
 const {
   randomStringFromArr,
   randomStringFromConcat,
+  genRandomArrChar,
 } = require("../utils/generateUtils");
 const { checkPerformance } = require("../utils/performance");
 checkPerformance("from arr", () => randomStringFromArr(100000));
