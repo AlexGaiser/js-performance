@@ -1,5 +1,5 @@
-const { generateRandomArr } = require("./utils/generateUtils");
-const { checkPerformance } = require("./utils/performance");
+const { generateRandomArr } = require("../utils/generateUtils");
+const { checkPerformance } = require("../utils/performance");
 
 const longArr = generateRandomArr(10000000);
 
@@ -17,3 +17,7 @@ checkPerformance("shift short", () => shortArr.shift());
 
 checkPerformance("slice short", () => shortArr.slice(0, 10));
 checkPerformance("slice long", () => longArr.slice(0, 10));
+
+// Sort should be O(N * log N)
+checkPerformance("sort short", () => shortArr.sort());
+checkPerformance("sort long", () => longArr.sort());
