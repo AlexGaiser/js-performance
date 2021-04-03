@@ -1,6 +1,6 @@
 {
   "name": "js-performance",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A repository for testing JavaScript Performance metrics",
   "main": "index.js",
   "scripts": {
